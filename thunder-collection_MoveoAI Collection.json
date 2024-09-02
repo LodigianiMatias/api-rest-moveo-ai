@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "MoveoAI Collection",
+    "collectionId": "81693087-87fc-4a74-b5fe-9bb26822937f",
+    "dateExported": "2024-09-02T00:10:49.941Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "08f51a8d-adc4-43ea-b288-f1e19eb5ce29",
+            "colId": "81693087-87fc-4a74-b5fe-9bb26822937f",
+            "containerId": "",
+            "name": "GetAll",
+            "url": "localhost:8080/tasks",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-09-01T21:00:34.014Z",
+            "modified": "2024-09-01T21:00:34.014Z",
+            "headers": []
+        },
+        {
+            "_id": "988a6279-4a83-4499-8ca7-afad461de218",
+            "colId": "81693087-87fc-4a74-b5fe-9bb26822937f",
+            "containerId": "",
+            "name": "GetOneTask",
+            "url": "localhost:8080/tasks/3",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-09-01T21:00:59.528Z",
+            "modified": "2024-09-01T21:00:59.528Z",
+            "headers": []
+        },
+        {
+            "_id": "97b6355d-fd42-4805-be2b-2ee15639abda",
+            "colId": "81693087-87fc-4a74-b5fe-9bb26822937f",
+            "containerId": "",
+            "name": "POST",
+            "url": "localhost:8080/tasks",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-09-01T21:01:17.463Z",
+            "modified": "2024-09-01T21:01:17.463Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Tarea 1\",\n  \"description\": \"Descripcion 1\",\n  \"status\": \"in-progress\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "29e6c298-9718-4931-9f41-6647b950582a",
+            "colId": "81693087-87fc-4a74-b5fe-9bb26822937f",
+            "containerId": "",
+            "name": "DELETE",
+            "url": "localhost:8080/tasks/3",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-09-01T21:02:02.408Z",
+            "modified": "2024-09-01T21:02:02.408Z",
+            "headers": []
+        },
+        {
+            "_id": "ae9a5c48-9cd0-4806-9b38-46dc92bdf5cb",
+            "colId": "81693087-87fc-4a74-b5fe-9bb26822937f",
+            "containerId": "",
+            "name": "PUT",
+            "url": "localhost:8080/tasks/1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-09-01T22:06:58.294Z",
+            "modified": "2024-09-01T22:06:58.294Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Tarea 2\",\n  \"description\": \"Descripcion 2\",\n  \"status\": \"completed\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "sqWof2tkLvRPzqQEabGukWAn9GwS8bh8_7-qj6x9i49bbc9ix9nqM7A6oWDyZTiH2Gin2_lBXi5EkqrcpMgjtw"
+}

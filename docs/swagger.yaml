@@ -1,0 +1,105 @@
+definitions:
+  models.Task:
+    properties:
+      description:
+        type: string
+      due_date:
+        type: string
+      id:
+        type: integer
+      status:
+        type: string
+      title:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: lodigiani.matias97@gmail.com
+    name: Matias Leonel Lodigiani
+  description: Este es un proyecto de prueba técnica. El challenge consiste en realizar
+    un API REST con sus respectivos endpoints usando Go.
+  title: MOVEO.AI CHALLENGE
+paths:
+  /tasks:
+    get:
+      description: Obtiene la lista completa de tareas
+      responses: {}
+      summary: Obtener
+      tags:
+      - tasks
+    post:
+      consumes:
+      - application/json
+      description: Añade una nueva tarea a la lista
+      parameters:
+      - description: Task a crear
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/models.Task'
+      produces:
+      - application/json
+      responses: {}
+      summary: Crear
+      tags:
+      - tasks
+  /tasks/{id}:
+    delete:
+      description: Elimina la tarea por id
+      parameters:
+      - description: Task ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses: {}
+      summary: Eliminar
+      tags:
+      - tasks
+    get:
+      consumes:
+      - application/json
+      description: Obtiene la tarea por id
+      parameters:
+      - description: Task ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses: {}
+      summary: Obtener
+      tags:
+      - tasks
+    put:
+      consumes:
+      - application/json
+      description: Modifica la tarea por id
+      parameters:
+      - description: Task ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Task a actualizar
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/models.Task'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Task'
+            type: array
+      summary: Actualizar
+      tags:
+      - tasks
+swagger: "2.0"

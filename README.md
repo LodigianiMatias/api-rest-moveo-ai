@@ -1,6 +1,6 @@
-# Proyecto de API REST en Go
+# Prueba técnica moveo.ai
 
-Este proyecto es una API RESTful escrita en Go que permite gestionar tareas utilizando una base de datos MySQL. La API ofrece operaciones CRUD (Crear, Leer, Actualizar, Eliminar). Incluye documentación generada automáticamente con Swagger.
+Este proyecto es una API RESTful en Go que permite gestionar tareas utilizando una base de datos MySQL. La API ofrece operaciones CRUD (Crear, Leer, Actualizar, Eliminar). Incluye documentación generada automáticamente con Swagger.
 Se encuentra también un archivo para ejecutar los endpoints con la extensión Thunder Client.
 
 # Instalación

@@ -1,11 +1,24 @@
 # Proyecto de API REST en Go
 
-Este proyecto es una API RESTful escrita en Go que permite gestionar tareas . La API ofrece operaciones CRUD (Crear, Leer, Actualizar, Eliminar). También incluye documentación generada automáticamente con Swagger.
+Este proyecto es una API RESTful escrita en Go que permite gestionar tareas utilizando una base de datos MySQL. La API ofrece operaciones CRUD (Crear, Leer, Actualizar, Eliminar). También incluye documentación generada automáticamente con Swagger.
 Se encuentra también un archivo para ejecutar los endpoints con la extensión Thunder Client.
 
 # Instalación
 - [Go](https://golang.org/doc/install)
 - [MySQL](https://dev.mysql.com/downloads/mysql/) para la base de datos
+
+# Base de datos 
+Se debe crear un archivo .env que reciba los siguientes parametros:
+
+DB_USER= *Su usuario de MySQL Server*
+
+DB_PASSWORD= *password*
+
+DB_HOST=localhost
+
+DB_PORT=3306
+
+DB_NAME=testing-moveo-ai
 
 ## Instalar dependecias
 ### go mod dowload
@@ -69,3 +82,4 @@ Ruta: /tasks/{id}
 
 Método: DELETE
 ![image](https://github.com/user-attachments/assets/1872b819-0826-4bae-8d80-218976916fe7)
+![image](https://github.com/user-attachments/assets/b7a0a9fc-8238-4e43-be63-afef12a6eeb4)
